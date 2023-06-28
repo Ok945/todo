@@ -93,8 +93,11 @@
 
         </fieldset>
 
-
-        <buttton type="button" onclick="redirectToNextPage1()" class="button">Next</buttton>
+        <div class="button-container">
+          <buttton type="button" onclick="redirectToPrevPage1()" class="button prev">Back</buttton>
+          <buttton type="button" onclick="redirectToNextPage1()" class="button">Next</buttton>
+        </div>
+          
         <center><b>Developed by Web Team &#64 Zest<b>
               <center>
       </form>
@@ -141,10 +144,11 @@
         alert("Fill out the form correctly!");
       }
 
+    }
 
-
-
-
+    function redirectToPrevPage1() {
+      // Redirect to the desired URL
+      window.location.href = "index.html";
 
     }
 
