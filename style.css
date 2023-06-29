@@ -106,15 +106,11 @@ select {
 }
 
 
-.button-container{
 
+.btn-container{
   display: flex;
-
 }
-
-
 .button {
-  display: block;
   padding: 19px 39px 18px 39px;
   color: #FFF;
   background-color:#1d1da1 ;
@@ -127,7 +123,7 @@ select {
   border: 1px solid #5252c8;
   border-width: 1px 1px 3px;
   box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
-  margin: 10px;
+  margin: 12px;
 }
 
 
