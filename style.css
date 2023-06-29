@@ -170,6 +170,10 @@ label.light {
 
 }
 
+.fa-brands:hover{
+  color: rgb(98, 38, 23);
+}
+
 .fa-instagram {
   background: linear-gradient(to right, #833AB4, #FD1D1D);
   -webkit-background-clip: text;

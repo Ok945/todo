@@ -242,9 +242,9 @@
         <center>
           <b>Developed by Web Team &#64 Zest</b>
           <div class="contactUs">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-facebook"></i>
+            <i id="insta" class="fa-brands fa-instagram"></i>
+            <i  id="linkedin " class="fa-brands fa-linkedin"></i>
+            <i  id="facebook" class="fa-brands fa-facebook"></i>
           </div>
         </center>
 
@@ -379,12 +379,6 @@
       }
     })
 
-
-
-
-
-
-
     function redirecToPrevPage1() {
 
       document.getElementById("firstpage").style.display = "block";
@@ -401,6 +395,20 @@
 
     }
 
+    document.getElementById("insta").addEventListener('click' ,e =>{
+    
+      window.location.href = "https://instagram.com/coepzest?igshid=MzRlODBiNWFlZA=="
+    } )
+
+    document.getElementById("linkedin").addEventListener('click' ,e =>{
+    
+      window.location.href = "https://www.linkedin.com/in/coep-zest-483627165"
+    } )
+
+    document.getElementById("facebook").addEventListener('click' ,e =>{
+    
+      window.location.href = "https://instagram.com/coepzest?igshid=MzRlODBiNWFlZA=="
+    } )
 
   </script>
 </body>
