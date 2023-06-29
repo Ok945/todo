@@ -172,7 +172,12 @@ label.light {
 }
 
 .fa-brands:hover{
-  color: rgb(98, 38, 23);
+  bbackground: linear-gradient(to right, #3d1a54fb, #271702);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  cursor: pointer;
 }
 
 .fa-instagram {
