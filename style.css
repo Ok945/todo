@@ -25,6 +25,22 @@ background: linear-gradient(to bottom right, #69B7F8, #3010D7);
   /* left: auto; */
   /* right: auto; */
 }
+
+
+
+
+#secondpage{
+display: none;
+}
+
+#thirdpage{
+display: none;
+}
+
+
+
+
+
 form {
   max-width: 300px;
   margin: 10px auto;

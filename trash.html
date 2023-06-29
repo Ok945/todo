@@ -6,6 +6,10 @@
     .error {
       color: red;
     }
+
+    #form2{
+      display: none;
+    }
   </style>
 </head>
 <body>
@@ -20,6 +24,17 @@
 </form>
 
 <!-- Second Form -->
+
+
+<form id="form2">
+  <label for="email">Email:</label>
+  <input type="email" id="email">
+
+  <!-- Other form fields -->
+
+  <button type="button" onclick="saveForm2()">Submit</button>
+  <button type="button" onclick="goToForm1()">Back</button>
+</form>
 
 
 <script src="trash.js"></script>

@@ -2,9 +2,15 @@
 function saveForm1() {
     var name = document.getElementById('name').value;
     sessionStorage.setItem('name', name);
+    console.log("hello")
 
     // Proceed to Form 2
     // ...
+
+    // window.location.href="trash2.html"
+    
+    document.getElementById('form1').style.display = 'none';
+    document.getElementById('form2').style.display = 'block';
   }
 
   // Save form data from Form 2 to sessionStorage
