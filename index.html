@@ -33,7 +33,7 @@
 <body>
   <div class="row">
     <div class="col-md-12">
-      <form id="myForm" name="google-sheets" method="post">
+      <form id="myForm" name="zest-form" method="post">
         <h1 style="font-size:25px ;margin:5px 0 5px 0"> COEP Technological University </h1>
         <center><img src="Zest'23.png" id="logo"></center>
         <hr style="border-top: 3px double #8c8b8b">
@@ -103,163 +103,166 @@
 
 
 
-
-
-        <fieldset id="secondpage">
-
-          <legend><span class="number">1</span> Your Basic Info</legend>
-
-
-
-          <label for="name">Full Name<sup style="color:red">*</sup></label>
-          <input type="text" id="name" name="name" required>
-
-          <label for="MIS">MIS<sup style="color:red">*</sup></label>
-          <input type="tel" id="MIS" name="MIS" minlength="9" required>
-
-          <label for="division">Division<sup style="color:red">*</sup></label>
-          <select id="division" name="division" required>
-            <option value="0" disabled selected hidden>Select Division</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-          </select>
-
-          <label for="branch">Branch<sup style="color:red">*</sup></label>
-          <select id="branch" name="branch" required>
-            <option value="1" disabled selected hidden>Select Branch</option>
-            <option value="Civil">Civil Engineering</option>
-            <option value="Computer">Computer Engineering</option>
-            <option value="Electrical">Electrical Engineering</option>
-            <option value="EnTC">EnTC</option>
-            <option value="Instrumentation">Instrumentation and Control Engineering</option>
-            <option value="Manufacturing">Manufacturing Engineering</option>
-            <option value="Mechanical">Mechanical Engineering</option>
-            <option value="Metallurgy">Metallurgy</option>
-            <option value="Planning">Planning</option>
-          </select>
-
-          <label for="email">College Email ID<sup style="color:red">*</sup></label>
-          <input type="email" id="mail" name="email" required>
-
-          <label for="Alt-email">Alternate Email ID<sup style="color:red">*</sup></label>
-          <input type="email" id="Alt-email" name="Alt-email" required>
-
-          <label for="number">WhatsApp Number<sup style="color:red">*</sup></label>
-          <input type="tel" id="number" name="Whatsapp-number" minlength="10" required>
-
-
-
-          <div class="button-container">
-            <button type="button" onclick="redirectToPrevPage1()" class="button prev">Back</button>
-            <button type="button" onclick="redirectToNextPage1()" class="button">Next</button>
-          </div>
-
-        </fieldset>
+        <form method="post" name="google-sheets">
 
 
 
 
+          <fieldset id="secondpage">
+
+            <legend><span class="number">1</span> Your Basic Info</legend>
+
+
+
+            <label for="name">Full Name<sup style="color:red">*</sup></label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="MIS">MIS<sup style="color:red">*</sup></label>
+            <input type="tel" id="MIS" name="MIS" minlength="9" required>
+
+            <label for="division">Division<sup style="color:red">*</sup></label>
+            <select id="division" name="division" required>
+              <option value="0" disabled selected hidden>Select Division</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+
+            <label for="branch">Branch<sup style="color:red">*</sup></label>
+            <select id="branch" name="branch" required>
+              <option value="1" disabled selected hidden>Select Branch</option>
+              <option value="Civil">Civil Engineering</option>
+              <option value="Computer">Computer Engineering</option>
+              <option value="Electrical">Electrical Engineering</option>
+              <option value="EnTC">EnTC</option>
+              <option value="Instrumentation">Instrumentation and Control Engineering</option>
+              <option value="Manufacturing">Manufacturing Engineering</option>
+              <option value="Mechanical">Mechanical Engineering</option>
+              <option value="Metallurgy">Metallurgy</option>
+              <option value="Planning">Planning</option>
+            </select>
+
+            <label for="email">College Email ID<sup style="color:red">*</sup></label>
+            <input type="email" id="mail" name="email" required>
+
+            <label for="Alt-email">Alternate Email ID<sup style="color:red">*</sup></label>
+            <input type="email" id="Alt-email" name="Alt-email" required>
+
+            <label for="number">WhatsApp Number<sup style="color:red">*</sup></label>
+            <input type="tel" id="number" name="Whatsapp-number" minlength="10" required>
+
+
+
+            <div class="button-container">
+              <button type="button" onclick="redirectToPrevPage1()" class="button prev">Back</button>
+              <button type="button" onclick="redirectToNextPage1()" class="button">Next</button>
+            </div>
+
+          </fieldset>
 
 
 
 
 
 
-        <fieldset id="thirdpage">
-
-          <legend><span class="number">2</span> Work for Zest</legend>
-
-          <br>
-
-
-
-          <label for="Preference_1">Preference 1<sup style="color:red">*</sup></label>
-          <select id="Preference_1" name="Preference_1" class="preferenceSelect" required>
-            <option value="1" disabled selected hidden>Preference 1...</option>
-            <option value="Accounts">Accounts and Documentation</option>
-            <option value="AOG">Alumni Outreach Group</option>
-            <option value="Campus Decoration and Management">Campus Decoration and Management</option>
-            <option value="Championship">Championship</option>
-            <option value="CRN">Community Reach and Networking</option>
-            <option value="ESM">Electronic System Management</option>
-            <option value="Events">Events</option>
-            <option value="Design">Design</option>
-            <option value="Finance">Finance and Marketing</option>
-            <option value="Hospitality">Hospitality</option>
-            <option value="Infrastructure">Infrastructure</option>
-            <option value="Logistics">Logistics</option>
-            <option value="Media">Media</option>
-            <option value="Refreshments">Refreshments</option>
-            <option value="VFX">VFX</option>
-            <option value="Web">Web and Android Development</option>
-          </select>
-          <label for="Preference_2">Preference 2<sup style="color:red">*</sup></label>
-          <select id="Preference_2" name="Preference_2" class="preferenceSelect" required>
-            <option value="2" disabled selected hidden>Preference 2...</option>
-            <option value="Accounts">Accounts and Documentation</option>
-            <option value="AOG">Alumni Outreach Group</option>
-            <option value="Campus Decoration and Management">Campus Decoration and Management</option>
-            <option value="Championship">Championship</option>
-            <option value="CRN">Community Reach and Networking</option>
-            <option value="ESM">Electronic System Management</option>
-            <option value="Events">Events</option>
-            <option value="Design">Design</option>
-            <option value="Finance">Finance and Marketing</option>
-            <option value="Hospitality">Hospitality</option>
-            <option value="Infrastructure">Infrastructure</option>
-            <option value="Logistics">Logistics</option>
-            <option value="Media">Media</option>
-            <option value="Refreshments">Refreshments</option>
-            <option value="VFX">VFX</option>
-            <option value="Web">Web and Android Development</option>
-          </select>
-          <label for="Preference_3">Preference 3<sup style="color:red">*</sup></label>
-          <select id="Preference_3" name="Preference_3" text="Preference 3" class="preferenceSelect" required>
-            <option value="3" disabled selected hidden>Preference 3...</option>
-            <option value="Accounts">Accounts and Documentation</option>
-            <option value="AOG">Alumni Outreach Group</option>
-            <option value="Campus Decoration and Management">Campus Decoration and Management</option>
-            <option value="Championship">Championship</option>
-            <option value="CRN">Community Reach and Networking</option>
-            <option value="ESM">Electronic System Management</option>
-            <option value="Events">Events</option>
-            <option value="Design">Design</option>
-            <option value="Finance">Finance and Marketing</option>
-            <option value="Hospitality">Hospitality</option>
-            <option value="Infrastructure">Infrastructure</option>
-            <option value="Logistics">Logistics</option>
-            <option value="Media">Media</option>
-            <option value="Refreshments">Refreshments</option>
-            <option value="VFX">VFX</option>
-            <option value="Web">Web and Android Development</option>
-          </select>
-
-          <label for="bio">What do you know about Zest?<sup style="color:red">*</sup></label>
-          <textarea id="bio" name="About_Zest" required></textarea>
-          <label for="que">Why do you want to join Zest?<sup style="color:red">*</sup></label>
-          <textarea id="que" name="Why_Zest" required></textarea>
 
 
 
 
-          <div class="button-container">
-            <button type="button" onclick="redirectToPrevPage2()" class="button prev">Back</button>
-            <!-- <input type="submit" value="Submit" name="submit" class="button"> -->
-            <input type="submit" value="Submit" name="submit" class="button">
-          </div>
+          <fieldset id="thirdpage">
 
-        </fieldset>
+            <legend><span class="number">2</span> Work for Zest</legend>
+
+            <br>
 
 
+
+            <label for="Preference_1">Preference 1<sup style="color:red">*</sup></label>
+            <select id="Preference_1" name="Preference_1" class="preferenceSelect" required>
+              <option value="1" disabled selected hidden>Preference 1...</option>
+              <option value="Accounts">Accounts and Documentation</option>
+              <option value="AOG">Alumni Outreach Group</option>
+              <option value="Campus Decoration and Management">Campus Decoration and Management</option>
+              <option value="Championship">Championship</option>
+              <option value="CRN">Community Reach and Networking</option>
+              <option value="ESM">Electronic System Management</option>
+              <option value="Events">Events</option>
+              <option value="Design">Design</option>
+              <option value="Finance">Finance and Marketing</option>
+              <option value="Hospitality">Hospitality</option>
+              <option value="Infrastructure">Infrastructure</option>
+              <option value="Logistics">Logistics</option>
+              <option value="Media">Media</option>
+              <option value="Refreshments">Refreshments</option>
+              <option value="VFX">VFX</option>
+              <option value="Web">Web and Android Development</option>
+            </select>
+            <label for="Preference_2">Preference 2<sup style="color:red">*</sup></label>
+            <select id="Preference_2" name="Preference_2" class="preferenceSelect" required>
+              <option value="2" disabled selected hidden>Preference 2...</option>
+              <option value="Accounts">Accounts and Documentation</option>
+              <option value="AOG">Alumni Outreach Group</option>
+              <option value="Campus Decoration and Management">Campus Decoration and Management</option>
+              <option value="Championship">Championship</option>
+              <option value="CRN">Community Reach and Networking</option>
+              <option value="ESM">Electronic System Management</option>
+              <option value="Events">Events</option>
+              <option value="Design">Design</option>
+              <option value="Finance">Finance and Marketing</option>
+              <option value="Hospitality">Hospitality</option>
+              <option value="Infrastructure">Infrastructure</option>
+              <option value="Logistics">Logistics</option>
+              <option value="Media">Media</option>
+              <option value="Refreshments">Refreshments</option>
+              <option value="VFX">VFX</option>
+              <option value="Web">Web and Android Development</option>
+            </select>
+            <label for="Preference_3">Preference 3<sup style="color:red">*</sup></label>
+            <select id="Preference_3" name="Preference_3" text="Preference 3" class="preferenceSelect" required>
+              <option value="3" disabled selected hidden>Preference 3...</option>
+              <option value="Accounts">Accounts and Documentation</option>
+              <option value="AOG">Alumni Outreach Group</option>
+              <option value="Campus Decoration and Management">Campus Decoration and Management</option>
+              <option value="Championship">Championship</option>
+              <option value="CRN">Community Reach and Networking</option>
+              <option value="ESM">Electronic System Management</option>
+              <option value="Events">Events</option>
+              <option value="Design">Design</option>
+              <option value="Finance">Finance and Marketing</option>
+              <option value="Hospitality">Hospitality</option>
+              <option value="Infrastructure">Infrastructure</option>
+              <option value="Logistics">Logistics</option>
+              <option value="Media">Media</option>
+              <option value="Refreshments">Refreshments</option>
+              <option value="VFX">VFX</option>
+              <option value="Web">Web and Android Development</option>
+            </select>
+
+            <label for="bio">What do you know about Zest?<sup style="color:red">*</sup></label>
+            <textarea id="bio" name="About_Zest" required></textarea>
+            <label for="que">Why do you want to join Zest?<sup style="color:red">*</sup></label>
+            <textarea id="que" name="Why_Zest" required></textarea>
+
+
+
+
+            <div class="button-container">
+              <button type="button" onclick="redirectToPrevPage2()" class="button prev">Back</button>
+              <!-- <input type="submit" value="Submit" name="submit" class="button"> -->
+              <input type="submit" value="Submit" name="submit" class="button">
+            </div>
+
+          </fieldset>
+
+        </form>
 
 
 
@@ -278,15 +281,6 @@
 
 
 
-    function redirectToNextPage() {
-      // Redirect to the desired URL
-
-      // window.location.href = "basicinfo.html";
-      var form = document.getElementById("secondpage");
-      document.getElementById('firstpage').style.display = 'none';
-      document.getElementById('secondpage').style.display = 'block';
-      document.getElementById('thirdpage').style.display = 'none';
-    }
 
 
 
@@ -342,10 +336,38 @@
 
     }
 
+
+
+
+
+
+
+
+
+
+
+
+    function redirectToNextPage() {
+      // Redirect to the desired URL
+
+      // window.location.href = "basicinfo.html";
+      var form1 = document.getElementById("secondpage");
+      loadform(form1);
+      document.getElementById('firstpage').style.display = 'none';
+      document.getElementById('secondpage').style.display = 'block';
+      document.getElementById('thirdpage').style.display = 'none';
+    }
+
+
+
+
+
+
+
     function redirectToNextPage1() {
-      var form = document.getElementById("secondpage");
+      var form2 = document.getElementById("secondpage");
       var form1 = document.getElementById("thirdpage");
-      saveform(form);
+      saveform(form2);
       loadform(form1);
       if (check()) {
         // window.location.href = "zestinfo.html";
@@ -362,8 +384,8 @@
 
     function redirectToPrevPage1() {
 
-      var form = document.getElementById("secondpage");
-      saveform(form);
+      var form2 = document.getElementById("secondpage");
+      saveform(form2);
       document.getElementById('firstpage').style.display = 'block';
       document.getElementById('secondpage').style.display = 'none';
       document.getElementById('thirdpage').style.display = 'none';
@@ -374,9 +396,9 @@
 
     function redirectToPrevPage2() {
 
-      var form = document.getElementById("thirdpage");
+      var form2 = document.getElementById("thirdpage");
       var form1 = document.getElementById("secondpage");
-      saveform(form);
+      saveform(form2);
       loadform(form1);
 
       document.getElementById('firstpage').style.display = 'none';
@@ -394,7 +416,7 @@
       fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
         .catch(error => console.error('Error!', error.message))
-      
+
       console.log("hello");
     })
 
@@ -408,4 +430,3 @@
 </body>
 
 </html>
-
