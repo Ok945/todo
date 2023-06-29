@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -8,18 +10,18 @@ body {
   font-family: 'Nunito', sans-serif;
   color: #384047;
   /* Created with https://www.css-gradient.com */
-background: #f8cb69;
-background: -webkit-linear-gradient(top left, #69B7F8, #3010D7);
-background: -moz-linear-gradient(top left, #69B7F8, #3010D7);
-background: linear-gradient(to bottom right, #69B7F8, #3010D7);
+  background: #69B7F8;
+  background: -webkit-linear-gradient(top left, #69B7F8, #3010D7);
+  background: -moz-linear-gradient(top left, #69B7F8, #3010D7);
+  background: linear-gradient(to bottom right, #69B7F8, #3010D7);
   /* background-image: url('sports_background.jpg'); */
- /*  background-repeat: no-repeat;
+  /*  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center; */
 }
-#logo
-{
+
+#logo {
   width: 75px;
   /* margin-top: px; */
   /* left: auto; */
@@ -27,16 +29,13 @@ background: linear-gradient(to bottom right, #69B7F8, #3010D7);
 }
 
 
-
-
-#secondpage{
-display: none;
+#secondpage {
+  display: none;
 }
 
-#thirdpage{
-display: none;
+#thirdpage {
+  display: none;
 }
-
 
 
 
@@ -79,21 +78,24 @@ select {
   width: 100%;
   background-color: #d4e7ea;
   color: #585f63;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
   margin-bottom: 30px;
   border-radius: 10px;
 }
-textarea{
-    resize:vertical;
+
+textarea {
+  resize: vertical;
 }
-p{
-   margin: 10px 0;
-    padding: 5px;
-    border: 1px solid #999;
-    border-radius:5px ;
-    font-size: 13px;
-    /* background-color: white; */
+
+p {
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  font-size: 13px;
+  /* background-color: white; */
 }
+
 input[type="radio"],
 input[type="checkbox"] {
   margin: 0 4px 8px 0;
@@ -106,14 +108,14 @@ select {
 }
 
 
-
-.btn-container{
+.btn-container {
   display: flex;
 }
+
 .button {
   padding: 19px 39px 18px 39px;
   color: #FFF;
-  background-color:#1d1da1 ;
+  background-color: #1d1da1;
 
   font-size: 18px;
   text-align: center;
@@ -122,12 +124,11 @@ select {
   width: 100%;
   border: 1px solid #5252c8;
   border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
   margin: 12px;
 }
 
-
-.button:hover{
+.button:hover {
   background-color: #5f5fcf;
 }
 
@@ -161,9 +162,40 @@ label.light {
   margin-right: 4px;
   line-height: 30px;
   text-align: center;
-  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
   border-radius: 100%;
 }
+
+.fa-brands {
+  padding: 4px;
+
+}
+
+.fa-instagram {
+  background: linear-gradient(to right, #833AB4, #FD1D1D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.fa-linkedin {
+  background: linear-gradient(to right, #0A66C2, #00A0DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.fa-facebook {
+  background: linear-gradient(to right, #3B5998, #0E1F56);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+
 
 @media screen and (min-width: 480px) {
 
@@ -172,11 +204,11 @@ label.light {
   }
 
 }
-@media screen and (min-width: 300px)and (max-width: 480px)  {
+
+@media screen and (min-width: 300px)and (max-width: 480px) {
 
   form {
     max-width: 85%;
   }
 
 }
-
