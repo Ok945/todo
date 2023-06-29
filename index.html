@@ -98,7 +98,7 @@
             To see our previous work, visit <a href="https://www.coepzest.org/index.html">coepzest.org</a>.<br>
           </p>
 
-          <buttton onclick="redirectToNextPage()" class="button">Next</buttton>
+          <button onclick="redirectToNextPage()" class="button">Next</button>
         </fieldset>
 
 
@@ -108,6 +108,8 @@
         <fieldset id="secondpage">
 
           <legend><span class="number">1</span> Your Basic Info</legend>
+
+
 
           <label for="name">Full Name<sup style="color:red">*</sup></label>
           <input type="text" id="name" name="name" required>
@@ -155,9 +157,10 @@
           <input type="tel" id="number" name="Whatsapp-number" minlength="10" required>
 
 
+
           <div class="button-container">
-            <buttton type="button" onclick="redirectToPrevPage1()" class="button prev">Back</buttton>
-            <buttton type="button" onclick="redirectToNextPage1()" class="button">Next</buttton>
+            <button type="button" onclick="redirectToPrevPage1()" class="button prev">Back</button>
+            <button type="button" onclick="redirectToNextPage1()" class="button">Next</button>
           </div>
 
         </fieldset>
@@ -176,6 +179,9 @@
           <legend><span class="number">2</span> Work for Zest</legend>
 
           <br>
+
+
+
           <label for="Preference_1">Preference 1<sup style="color:red">*</sup></label>
           <select id="Preference_1" name="Preference_1" class="preferenceSelect" required>
             <option value="1" disabled selected hidden>Preference 1...</option>
@@ -244,11 +250,13 @@
 
 
 
+
           <div class="button-container">
-            <buttton type="button" onclick="redirectToPrevPage2()" class="button prev">Back</buttton>
+            <button type="button" onclick="redirectToPrevPage2()" class="button prev">Back</button>
             <!-- <input type="submit" value="Submit" name="submit" class="button"> -->
-            <input type="submit" value="Submit" name="submit" class="button" >
+            <input type="submit" value="Submit" name="submit" class="button">
           </div>
+
         </fieldset>
 
 
@@ -258,13 +266,13 @@
         <!-- <input type="submit" value="Submit" name="submit" class="button" > -->
         <center>
           <b>Developed by Web Team &#64 Zest<b>
-        <center>
+              <center>
       </form>
     </div>
   </div>
   <script src="script.js"></script>
   <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzqj3SyFK-_A59_S4J0ZTpSDbiAyxjQt9Ietvd1SMVv1T34Hfawmr7P3-24ZEUKHzj3Cg/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxVFiqkMh9JRDrmu2u352GFzJydQ-xz7NpUx2RfjSJIcE9zY3UpDIwSYLkLtBTbFZXB/exec'
     const form = document.forms['google-sheets']
 
 
@@ -381,6 +389,16 @@
 
 
 
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+      
+      console.log("hello");
+    })
+
+
 
 
 
@@ -390,3 +408,4 @@
 </body>
 
 </html>
+
