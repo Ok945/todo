@@ -118,7 +118,7 @@
             <input type="text" id="name" name="name" required>
 
             <label for="MIS">MIS<sup style="color:red">*</sup></label>
-            <input type="tel" id="MIS" name="MIS" minlength="9" required>
+            <input type="tel" id="MIS" name="mis" minlength="9" required>
 
             <label for="division">Division<sup style="color:red">*</sup></label>
             <select id="division" name="division" required>
@@ -154,10 +154,10 @@
             <input type="email" id="mail" name="email" required>
 
             <label for="Alt-email">Alternate Email ID<sup style="color:red">*</sup></label>
-            <input type="email" id="Alt-email" name="Alt-email" required>
+            <input type="email" id="Alt-email" name="alt-email" required>
 
             <label for="number">WhatsApp Number<sup style="color:red">*</sup></label>
-            <input type="tel" id="number" name="Whatsapp-number" minlength="10" required>
+            <input type="tel" id="number" name="whatsapp-number" minlength="10" required>
 
 
 
@@ -247,29 +247,32 @@
             </select>
 
             <label for="bio">What do you know about Zest?<sup style="color:red">*</sup></label>
-            <textarea id="bio" name="About_Zest" required></textarea>
+            <textarea id="bio" name="about_Zest" required></textarea>
             <label for="que">Why do you want to join Zest?<sup style="color:red">*</sup></label>
-            <textarea id="que" name="Why_Zest" required></textarea>
+            <textarea id="que" name="why_Zest" required></textarea>
 
 
 
 
             <div class="button-container">
+              <button type="submit" class="button">Submit</button>
               <button type="button" onclick="redirectToPrevPage2()" class="button prev">Back</button>
               <!-- <input type="submit" value="Submit" name="submit" class="button"> -->
-              <input type="submit" value="Submit" name="submit" class="button">
+              <!-- <input type="submit" value="Submit" name="submit" class="button"> -->
             </div>
 
           </fieldset>
+
+          <center>
+            <b>Developed by Web Team &#64 Zest<b>
+                <center>
 
         </form>
 
 
 
         <!-- <input type="submit" value="Submit" name="submit" class="button" > -->
-        <center>
-          <b>Developed by Web Team &#64 Zest<b>
-              <center>
+        
       </form>
     </div>
   </div>
@@ -287,7 +290,7 @@
     function check() {
       var name = document.getElementById('name').value;
       var MIS = document.getElementById('MIS').value;
-      var email = document.getElementById('Alt-email').value;
+      var email = document.getElementById('alt-email').value;
       var mobile_num = document.getElementById('number').value;
       var b = document.getElementById('branch').value;
       var d = document.getElementById('division').value;
@@ -303,56 +306,10 @@
 
 
 
-    function saveform(form) {
-
-
-      // var form = document.getElementById("secondpage");
-      var inputs = form.querySelectorAll("input");
-
-      for (var i = 0; i < inputs.length; i++) {
-        var input = inputs[i];
-        var key = input.id;
-        var value = input.value;
-
-        sessionStorage.setItem(key, value);
-      }
-
-    }
-
-
-
-    function loadform(form) {
-
-
-      var inputs = form.querySelectorAll("input");
-
-      for (var i = 0; i < inputs.length; i++) {
-        var input = inputs[i]
-        var key = input.id;
-        input.value = sessionStorage.getItem(key);
-
-      }
-
-
-    }
-
-
-
-
-
-
-
-
-
-
-
 
     function redirectToNextPage() {
-      // Redirect to the desired URL
-
-      // window.location.href = "basicinfo.html";
-      var form1 = document.getElementById("secondpage");
-      loadform(form1);
+      
+     
       document.getElementById('firstpage').style.display = 'none';
       document.getElementById('secondpage').style.display = 'block';
       document.getElementById('thirdpage').style.display = 'none';
@@ -365,10 +322,7 @@
 
 
     function redirectToNextPage1() {
-      var form2 = document.getElementById("secondpage");
-      var form1 = document.getElementById("thirdpage");
-      saveform(form2);
-      loadform(form1);
+    
       if (check()) {
         // window.location.href = "zestinfo.html";
         document.getElementById('firstpage').style.display = 'none';
@@ -384,8 +338,7 @@
 
     function redirectToPrevPage1() {
 
-      var form2 = document.getElementById("secondpage");
-      saveform(form2);
+    
       document.getElementById('firstpage').style.display = 'block';
       document.getElementById('secondpage').style.display = 'none';
       document.getElementById('thirdpage').style.display = 'none';
@@ -396,10 +349,7 @@
 
     function redirectToPrevPage2() {
 
-      var form2 = document.getElementById("thirdpage");
-      var form1 = document.getElementById("secondpage");
-      saveform(form2);
-      loadform(form1);
+     
 
       document.getElementById('firstpage').style.display = 'none';
       document.getElementById('secondpage').style.display = 'block';
