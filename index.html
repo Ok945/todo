@@ -232,7 +232,7 @@
           <textarea id="que" name="Why_Zest" required></textarea>
           <div class="btn-container">
             <button class="button" onclick="redirecToPrevPage2()">Back</button>
-            <input type="submit" value="Submit" name="submit"  id="submit-btn" class="button">
+            <input type="submit" value="Submit" name="submit" id="submit-btn" class="button">
           </div>
         </fieldset>
 
@@ -299,8 +299,8 @@
       var email = document.getElementById('mail').value;
       var phone = document.getElementById('number').value;
 
- 
-      if ( name == "" || mis == "" || email == "" || phone == "" ){
+
+      if (name == "" || mis == "" || email == "" || phone == "") {
         alert("Please fill the required fields!");
         e.preventDefault();
         return false;
@@ -321,9 +321,12 @@
     btn.addEventListener('click', e => {
       if (check(e)) {
         e.preventDefault();
-        fetch(scriptURL, { method:'POST', body: new FormData(form)})
-          .then(response => console.log('Success!' , response))
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => console.log('Success!', response))
           .catch(error => console.error('Error!', error.message))
+
+        alert("Form saved Succesfully!");
+        window.location.href = "https://coepzest.org/"
       }
 
     });
