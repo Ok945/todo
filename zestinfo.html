@@ -110,7 +110,11 @@
             
           </fieldset>
            
-          <input type="submit" value="Submit" name="submit" class="button" >
+
+          <div class="button-container">
+            <buttton type="button" onclick="redirectToPrevPage1()" class="button prev">Back</buttton>
+            <input type="submit" value="Submit" name="submit" class="button" >
+          </div>
           <center><b>Developed by Web Team &#64 Zest<b><center>
         </form>
       </div>
@@ -175,6 +179,13 @@
     //   alert("Fill out the form correctly!");
     // }
     });
+
+
+    function redirectToPrevPage1() {
+      // Redirect to the desired URL
+      window.location.href = "basicinfo.html";
+
+    }
     </script>
   </body>
 </html>

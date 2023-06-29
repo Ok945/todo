@@ -9,35 +9,25 @@
   </style>
 </head>
 <body>
-  <form id="myForm">
-    <label for="email">Email:</label>
-    <input type="email" id="email" required><br>
+  <!-- First Form -->
+<form id="form1">
+  <label for="name">Name:</label>
+  <input type="text" id="name">
+  
+  <!-- Other form fields -->
 
-    <label for="number">Number:</label>
-    <input type="number" id="number" required><br>
+  <button type="button" onclick="saveForm1()">Next</button>
+</form>
 
-    <!-- Add more input fields here -->
+<!-- Second Form -->
 
-    <button type="button" onclick="validateForm()">Next</button>
-  </form>
 
-  <p id="errorMessage" class="error" style="display: none;">Please fill in all required fields.</p>
+<script src="trash.js"></script>
 
-  <script>
-    function validateForm() {
-      var form = document.getElementById("myForm");
-      var inputs = form.querySelectorAll("input[required]");
 
-      for (var i = 0; i < inputs.length; i++) {
-        if (inputs[i].value === "") {
-          document.getElementById("errorMessage").style.display = "block";
-          return;
-        }
-      }
+<script>
+  
+</script>
 
-      // If all required fields are filled, navigate to the next page
-      window.location.href = "next-page.html";
-    }
-  </script>
 </body>
 </html>
