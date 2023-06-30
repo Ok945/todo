@@ -4,28 +4,44 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: 'Nunito', sans-serif;
   color: #384047;
   /* Created with https://www.css-gradient.com */
-  background: #69B7F8;
+  /* background: #69B7F8;
   background: -webkit-linear-gradient(top left, #69B7F8, #3010D7);
   background: -moz-linear-gradient(top left, #69B7F8, #3010D7);
-  background: linear-gradient(to bottom right, #69B7F8, #3010D7);
-  background-image: url('sports_background.jpg');
-   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(to bottom right, #69B7F8, #3010D7); */
+  margin: 0;
+  padding: 0;
+
 }
+
+
 
 #logo {
   width: 75px;
   /* margin-top: px; */
   /* left: auto; */
   /* right: auto; */
+}
+
+.row{
+  width: 100%;
+  height: fit-content;
+  background-image: url('sports_background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0px;
 }
 
 
@@ -172,7 +188,7 @@ label.light {
 
 }
 
-.fa-brands:hover{
+.fa-brands:hover {
   font-size: 28px;
   cursor: pointer;
 }
@@ -207,14 +223,15 @@ label.light {
 
   form {
     max-width: 480px;
+   
   }
-  .btn1{
+
+  .btn1 {
     position: relative;
     left: -11px;
   }
-  p{
-  font-size: 15px;
-  }
+
+
 
 }
 
@@ -222,6 +239,7 @@ label.light {
 
   form {
     max-width: 92%;
+   
   }
 
   /* input[type="text"],
@@ -241,37 +259,38 @@ label.light {
   
   } */
 
-  .button{
+  .button {
     width: 80%;
     margin: 2px;
   }
-  .btn1{
+
+  .btn1 {
     position: relative;
     left: 25px;
   }
 
-  p{
+  p {
     font-size: 15px;
   }
 
 }
 
 @media screen and (max-width:360px) {
-  .button{
+  .button {
     width: 40%;
     padding: 10px;
     margin: 10px;
   }
 
-  .btn1{
+  .btn1 {
     position: relative;
     left: 55px;
   }
 
-  
-  p{
+
+  p {
     font-size: 15px;
-    }
+  }
 
 
 }
