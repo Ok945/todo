@@ -220,7 +220,7 @@ label.light {
     max-width: 85%;
   }
 
-  input[type="text"],
+  /* input[type="text"],
   input[type="password"],
   input[type="date"],
   input[type="datetime"],
@@ -235,7 +235,7 @@ label.light {
   
     width: 80%;
   
-  }
+  } */
 
   .button{
     width: 80%;
