@@ -173,11 +173,7 @@ label.light {
 }
 
 .fa-brands:hover{
-  bbackground: linear-gradient(to right, #3d1a54fb, #271702);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+  font-size: 28px;
   cursor: pointer;
 }
 
