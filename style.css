@@ -122,14 +122,14 @@ select {
   font-style: normal;
   border-radius: 5px;
   width: 100%;
-  border: 1px solid #5252c8;
+  border: 1px solid #5290c8;
   border-width: 1px 1px 3px;
   box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
   margin: 12px;
 }
 
 .button:hover {
-  background-color: #5f5fcf;
+  background-color: #5f9dcf;
 }
 
 fieldset {
@@ -197,8 +197,8 @@ label.light {
   text-fill-color: transparent;
 }
 
-.fa-facebook {
-  background: linear-gradient(to right, #3B5998, #0E1F56);
+.fa-twitter {
+  background: linear-gradient(to right, #1DA1F2, #1877F2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -215,6 +215,9 @@ label.light {
   .btn1{
     position: relative;
     left: -11px;
+  }
+  p{
+  font-size: 15px;
   }
 
 }
@@ -268,6 +271,11 @@ label.light {
     position: relative;
     left: 55px;
   }
+
+  
+  p{
+    font-size: 15px;
+    }
 
 
 }
